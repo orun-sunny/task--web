@@ -1,0 +1,2 @@
+•    Choose one design: There are two designs available in the Figma file. You can select any one of them to implement.
+•    HTML and CSS: Focus on using HTML and CSS to recreate the chosen design as accurately as possible including mobile responsive.
