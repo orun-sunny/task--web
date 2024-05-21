@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FoodDelivery - PROMIXCO Group</title>
+
+    <!-- DaisyUI - TailwindCSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Jost Font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+
+    <!-- link CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- icons -->
+    <script
+      src="https://kit.fontawesome.com/8f786a7ca1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="font-jost-400">
+    <!-- navbar section -->
+    <header>
+      <div class="navbar md:px-16 lg:px-28">
+        <div class="flex-1">
+          <a class="btn btn-ghost text-xl font-jost-800 text-[#F40469]"
+            >FoodDelivery</a
+          >
+        </div>
+        <div class="flex-none">
+          <div class="dropdown dropdown-end">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost avatar font-jost-600"
+            >
+              Sign In
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <!-- banner -->
+      <div
+        class="hero h-[504px]"
+        style="background-image: url(images/banner-burger.jpg)"
+      >
+        <div class="hero-overlay bg-opacity-0"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div>
+            <h1 class="mb-10 text-5xl font-jost-400">
+              Your favorite food, delivered to you
+            </h1>
+            <!-- search bar -->
+            <form class="max-w-lg mx-auto rounded-3xl">
+              <div class="flex">
+                <button
+                  id="dropdown-button"
+                  data-dropdown-toggle="dropdown"
+                  class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-white border border-gray-300 rounded-s-3xl"
+                  type="button"
+                >
+                  <i
+                    class="fa-solid fa-location-dot text-[#FF006E] pl-3 pr-5"
+                  ></i
+                  >New York
+                </button>
+                <div
+                  id="dropdown"
+                  class="z-10 hidden bg-white divide-y divide-gray-100 rounded-2xl w-44"
+                ></div>
+                <div class="relative w-full">
+                  <input
+                    type="search"
+                    id="search-dropdown"
+                    class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-white rounded-e-3xl border-s-gray-50 border-s-2 border border-gray-300 focus:ring-[#FF006E] focus:border-[#FF006E] dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+                    placeholder=""
+                    required
+                  />
+                  <button
+                    type="submit"
+                    class="absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-[#FF006E] rounded-e-3xl hover:bg-[#FF006E] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-[#FF006E] dark:hover:bg-[#FF006E] dark:focus:ring-[#FF006E] px-7"
+                  >
+                    Search
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- banner-2 -->
+      <div class="hero min-h-screen">
+        <div class="hero-content flex-col lg:flex-row px-4">
+          <div class="lg:w-1/2">
+            <img class="w-full" src="images/Images@2x.png" alt="" />
+          </div>
+          <div class="lg:w-1/2">
+            <h1 class="text-5xl font-jost-400">
+              Take a taste, come <br />
+              join us. Life is so <br />
+              endlessly delicious
+            </h1>
+            <p class="py-6">
+              In the artist's own experience, of course, art is fundamentally
+              indefinable, unsayable; there is something sacred about its
+              demands upon the soul, something inherently mysterious in the
+              forms it takes
+            </p>
+            <button
+              class="btn text-white font-jost-600 rounded-3xl bg-[#FF006E] hover:bg-[#FF006E]"
+            >
+              Download our App
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- banner-3 -->
+      <div class="md:mx-10 lg:mx-20 my-20">
+        <section class="text-black flex items-center justify-between">
+          <p class="font-jost-600 text-xl">Popular on New York area</p>
+          <p>View All<i class="fa-solid fa-right-long"></i></p>
+        </section>
+        <!-- grids -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 px-10 lg:px-0 py-10 gap-5">
+          <!-- row span -->
+          <div class="row-span-2">
+            <img class="rounded-xl" src="images/grid-1.jpg" alt="" />
+            <p class="font-jost-400 text-xl pt-5 pb-2">Suites Hotel</p>
+            <div class="flex gap-10">
+              <p class="font-jost-400 text-lg pb-2">
+                <i class="fa-solid fa-bell-concierge pr-2"></i>$ 9.99 Delivery
+                Fee
+              </p>
+              <p class="font-jost-400 text-lg pb-2">
+                <i class="fa-regular fa-clock"></i>10 - 15 mins
+              </p>
+            </div>
+          </div>
+          <!-- cols -->
+          <div class="">
+            <img class="rounded-xl" src="images/grid-2.jpg" alt="" />
+            <p class="font-jost-400 text-xl pt-5 pb-">Suites Hotel</p>
+            <div class="flex gap-10">
+              <p class="font-jost-400 text-lg pb-2">
+                <i class="fa-solid fa-bell-concierge pr-2"></i>$ 9.99 Delivery
+                Fee
+              </p>
+              <p class="font-jost-400 text-lg pb-2">
+                <i class="fa-regular fa-clock"></i>10 - 15 mins
+              </p>
+            </div>
+          </div>
+          <div class="">
+            <img class="rounded-xl" src="images/grid-3.jpg" alt="" />
+            <p class="font-jost-400 text-xl pt-5 pb-2">Suites Hotel</p>
+            <div class="flex gap-10">
+              <p class="font-jost-400 text-lg pb-2">
+                <i class="fa-solid fa-bell-concierge pr-2"></i>$ 9.99 Delivery
+                Fee
+              </p>
+              <p class="font-jost-400 text-lg pb-2">
+                <i class="fa-regular fa-clock"></i>10 - 15 mins
+              </p>
+            </div>
+          </div>
+          <div class="">
+            <img class="rounded-xl" src="images/grid-4.jpg" alt="" />
+            <p class="font-jost-400 text-xl pt-5 pb-2">Suites Hotel</p>
+            <div class="flex gap-10">
+              <p class="font-jost-400 text-lg pb-2">
+                <i class="fa-solid fa-bell-concierge pr-2"></i>$ 9.99 Delivery
+                Fee
+              </p>
+              <p class="font-jost-400 text-lg pb-2">
+                <i class="fa-regular fa-clock"></i>10 - 15 mins
+              </p>
+            </div>
+          </div>
+          <div class="">
+            <img class="rounded-xl" src="images/grid-5.jpg" alt="" />
+            <p class="font-jost-400 text-xl pt-5 pb-2">Suites Hotel</p>
+            <div class="flex gap-10">
+              <p class="font-jost-400 text-lg pb-2">
+                <i class="fa-solid fa-bell-concierge pr-2"></i>$ 9.99 Delivery
+                Fee
+              </p>
+              <p class="font-jost-400 text-lg pb-2">
+                <i class="fa-regular fa-clock"></i>10 - 15 mins
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- banner-how it works -->
+      <div class="m-20">
+        <h1 class="text-5xl font-jost-400 text-center pb-10">How it works</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-3">
+          <div class="text-center lg:w-2/3 shadow-2xl p-10 rounded-2xl mx-auto">
+            <i
+              class="text-7xl text-[#FF6A90] bg-pink-200 p-5 rounded-full fa-solid fa-mobile-screen-button"
+            ></i>
+            <p class="text-xl font-jost-600 text-[#F40469] py-5">
+              Order via App
+            </p>
+            <p>
+              In the artist's own experience, of course, art is fundamentally
+              indefinable, unsayable; there is something sacred about its
+              demands
+            </p>
+          </div>
+          <div class="text-center lg:w-2/3 shadow-2xl p-10 rounded-2xl mx-auto">
+            <i
+              class="text-7xl text-[#FF6A90] bg-pink-200 p-5 rounded-full fa-solid fa-utensils"
+            ></i>
+            <p class="text-xl font-jost-600 text-[#F40469] py-5">
+              Choose your food
+            </p>
+            <p>
+              In the artist's own experience, of course, art is fundamentally
+              indefinable, unsayable; there is something sacred about its
+              demands
+            </p>
+          </div>
+          <div class="text-center lg:w-2/3 shadow-2xl p-10 rounded-2xl mx-auto">
+            <i
+              class="text-7xl text-[#FF6A90] bg-pink-200 p-5 rounded-full fa-solid fa-drumstick-bite"
+            ></i>
+            <p class="text-xl font-jost-600 text-[#F40469] py-5">Enjoy!</p>
+            <p>
+              In the artist's own experience, of course, art is fundamentally
+              indefinable, unsayable; there is something sacred about its
+              demands
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- bring food -->
+      <div class="m-10 lg:m-20 p-10 lg:p-20 bg-[#FF6A90] rounded-2xl">
+        <h1 class="text-2xl lg:text-5xl font-jost-400 text-white">
+          Food Delivery helps you <br />
+          bring food to your front door
+        </h1>
+        <div class="mt-5 md:flex lg:flex items-center gap-10">
+          <button
+            class="btn text-white font-jost-600 rounded-3xl bg-[#283646] hover:bg-[#283646] border-0"
+          >
+            Download our App
+          </button>
+          <p
+            class="text-white font-jost-600 hover:underline mt-5 md:mt-0 lg:mt-0 pl-3 md:pl-0 lg:pl-0"
+          >
+            Browse food
+          </p>
+        </div>
+      </div>
+
+      <!-- food lovers said -->
+      <div class="m-10 lg:m-32">
+        <h1 class="text-5xl font-jost-400 text-center pb-5 lg:pb-10">
+          What our food lovers said
+        </h1>
+        <p class="text-center lg:w-2/3 mx-auto">
+          In the artist's own experience, of course, art is fundamentally
+          indefinable, unsayable; there is something sacred about its demands
+          upon the soul, something inherently mysterious in the forms it takes
+        </p>
+        <div
+          class="hero rounded-3xl my-10 lg:w-2/4 mx-auto h-[350px]"
+          style="background-image: url(images/review.jpg)"
+        >
+          <div class="hero-overlay rounded-3xl bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <p class="p-10 bg-[#C5CBD1] w-10 mx-auto rounded-full"></p>
+              <div class="flex">
+                <button class="btn btn-ghost rounded-full hover:text-[#F40469]">
+                  <i class="fa-solid fa-angle-left text-xl"></i>
+                </button>
+                <div>
+                  <p class="mb-5 text-white font-jost-600">
+                    In the artist's own experience, of course, art is
+                    fundamentally indefinable, unsayable
+                  </p>
+                  <p class="mb-5 text-[#F40469] font-jost-600">
+                    Tim Oliver, ordered Burger Extracheese
+                  </p>
+                </div>
+
+                <button class="btn btn-ghost rounded-full hover:text-[#F40469]">
+                  <i class="fa-solid fa-angle-right text-xl"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="text-7xl grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 lg:gap-12 justify-center text-pink-300"
+        >
+          <div class="justify-center text-center hover:text-pink-200">
+            <i class="fa-solid fa-drumstick-bite"></i>
+            <p class="text-3xl font-jost-500">KFC</p>
+          </div>
+          <div class="justify-center text-center hover:text-pink-200">
+            <i class="fa-solid fa-pizza-slice"></i>
+            <p class="text-3xl font-jost-500">Pizza Hut</p>
+          </div>
+          <div class="justify-center text-center hover:text-pink-200">
+            <i class="fa-solid fa-burger"></i>
+            <p class="text-3xl font-jost-500">Burger King</p>
+          </div>
+          <div class="justify-center text-center hover:text-pink-200">
+            <i class="fa-solid fa-bowl-food"></i>
+            <p class="text-3xl font-jost-500">Rice Bowl</p>
+          </div>
+          <div class="justify-center text-center hover:text-pink-200">
+            <i class="fa-solid fa-egg"></i>
+            <p class="text-3xl font-jost-500">Eggery</p>
+          </div>
+          <div class="justify-center text-center hover:text-pink-200">
+            <i class="fa-solid fa-cheese"></i>
+            <p class="text-3xl font-jost-500">Cheez</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <div class=" ">
+      <div>
+        <a class="btn btn-ghost text-2xl font-jost-500 text-[#F40469]"
+          >FoodDelivery</a
+        >
+      </div>
+      <div class="flex justify-center pb-8">
+        <div class="btn btn-ghost text-xl avatar font-jost-600">Partners</div>
+        <div class="btn btn-ghost text-xl avatar font-jost-600">About Us</div>
+        <div class="btn btn-ghost text-xl avatar font-jost-600">
+          Privacy Policy
+        </div>
+        <div class="btn btn-ghost text-xl avatar font-jost-600">Contact Us</div>
+      </div>
+    </div>
+
+    <footer class="footer justify-evenly p-10 bg-base-200 text-base-content">
+      <aside class="lg:pl-28">
+        <p>123 Lorem Ipsum Street<br />Tangerang, Banten</p>
+        <p>+10 - 234 - 5678</p>
+      </aside>
+      <nav>
+        <a class="link link-hover">All Restaurant</a>
+        <a class="link link-hover">Best Sellers</a>
+        <a class="link link-hover">Top Rated</a>
+        <a class="link link-hover">Newcomers</a>
+      </nav>
+      <nav>
+        <a class="link link-hover">FAQ</a>
+        <a class="link link-hover">Join our program</a>
+        <a class="link link-hover">Be our partners</a>
+        <a class="link link-hover">Terms & Condition</a>
+      </nav>
+      <div class="flex flex-col items-start">
+        <a class="link link-hover">Our Parent Company</a>
+        <a class="link link-hover">Make an investment</a>
+      </div>
+    </footer>
+  </body>
+</html>
